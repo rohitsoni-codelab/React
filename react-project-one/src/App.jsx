@@ -5,9 +5,9 @@ function App() {
   return (
 
     <div className="container">
-      <UserCard />
-      <UserCard />
-      <UserCard />
+      <UserCard name="Rohit Soni" desc=" Fullstack Developer"/>
+      <UserCard name="Golu Soni" desc=" Frontend Developer"/>
+      <UserCard name="Shubham Soni" desc=" Backend Developer"/>
     </div>
 
   )
