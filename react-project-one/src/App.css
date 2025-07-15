@@ -1,9 +1,11 @@
 .container{
-    height: 150px;
-    background-color: blueviolet;
     display: flex;
+    flex-direction: row;
     flex-wrap:wrap;
-    gap: 5px;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    padding: 20px;
+    
+
 }
