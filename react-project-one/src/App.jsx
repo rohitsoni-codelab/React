@@ -1,15 +1,15 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import './App.css'
+import UserCard from './components/UserCard'
+import './App.css'
 
 function App() {
-  
-
   return (
-    <>
-      <p>Hello Jiii, Let's begin</p>
-    </>
+
+    <div className="container">
+      <UserCard />
+      <UserCard />
+      <UserCard />
+    </div>
+
   )
 }
 

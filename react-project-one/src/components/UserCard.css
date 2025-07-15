@@ -1,0 +1,13 @@
+.user-container{
+    background-color: bisque;
+    color:black;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:20px;
+    height:20px;
+}
+#user-image{
+    height: 50%;
+    border-radius:50%;
+}
