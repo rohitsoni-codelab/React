@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.counter {
+    background-color: bisque;
+    color: black;
+    padding: 4px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border-radius: 3px;
+    align-items: center;
+
+}
