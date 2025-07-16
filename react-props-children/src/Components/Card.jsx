@@ -4,9 +4,18 @@ import Button from './Button'
 const Card = (props) => {
   return (
     <div>
-      <p>Hello jii</p>
+      {/* <p>Hello jii</p> */}
+
+
+
       <p>This is a {props.name}</p>
-      <Button/>
+      {props.children}
+
+
+
+
+
+      {/* <Button/> */}
     </div>
   );
 };

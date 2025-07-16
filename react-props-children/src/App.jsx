@@ -6,8 +6,8 @@ function App() {
   return (
     <div>
       <Card name='chotu card'>
-      </Card>
-      <Card name='Badu card'>
+        <p>This is the time to get seious</p>
+        <p>Put your feet on the acceletor</p>
       </Card>
     </div>
   )
