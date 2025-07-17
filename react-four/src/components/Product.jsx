@@ -1,3 +1,5 @@
+import Card from "./Card";
+import ProductItem from "./ProductItem";
 function Product(props) {
     return (
         <Card className='product'>
