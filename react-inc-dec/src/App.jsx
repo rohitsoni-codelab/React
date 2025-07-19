@@ -1,7 +1,17 @@
+import { useState } from 'react'
 import './App.css'
 
 function App() {
-
+  const [count, setCount] = useState(0);
+  function decrementHandler() {
+    setCount(count - 1);
+  }
+  function incrementHandler() {
+    setCount(count + 1);
+  }
+  function resetHandler(){
+    setCount(0)
+  }
   return (
     <div className='container'>
       <div className='top'>
@@ -10,20 +20,20 @@ function App() {
 
       <div className='middle'>
 
-        <button className='decrement'>-</button>
+        <button className='decrement' onClick={decrementHandler}>-</button>
 
 
         <div className='count'>
-          <p>Count 0</p>
+          <p>Count {count}</p>
         </div>
 
 
-        <button className='increment'>+</button>
+        <button className='increment' onClick={incrementHandler}>+</button>
 
       </div>
 
       <div className='bottom'>
-        <button>Reset</button>
+        <button onClick={resetHandler}>Reset</button>
       </div>
 
 
