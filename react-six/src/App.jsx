@@ -1,16 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Product from "./components/Product"
 import './App.css'
+export default function App() {
 
-function App() {
-  const [count, setCount] = useState(0)
 
   return (
-   <div>
-    hello jii
-   </div>
+    <div className="product-tab">
+      <Product title="Logitech MX Master" id="0"/>
+      <Product title="Apple Pencil (2nd Gen)" id="1"/>
+      <Product title="Zebronics Zeb-transformer" id="2"/>
+      <Product title="Petronics Toad 23" id="3"/>
+    </div>
   )
 }
 
-export default App
+
