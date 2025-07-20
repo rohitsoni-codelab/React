@@ -1,13 +1,14 @@
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import './App.css';
 
 function App() {
-  const [arr, setArr] = useState([]); 
+  const [arr, setArr] = useState([{value:"no task",id:uuidv4()}]); //modified
   const [val, setVal] = useState("");
 
   function addTaskHandler() {
     if (val.trim() === "") return; 
-    setArr(prevArr => [...prevArr, val]);
+    setArr(prevArr => [...prevArr, {value:val,id:uuidv4()}]);//modified
     setVal("");
   }
 
@@ -28,8 +29,8 @@ function App() {
       <button onClick={addTaskHandler}>Add Task</button>
 
       <ul>
-        {arr.map((todos, index) => (
-          <li key={index}>{todos}</li>
+        {arr.map((todos) => (
+          <li key={todos.id}>{todos.value}</li>//modified
         ))}
       </ul>
     </div>
