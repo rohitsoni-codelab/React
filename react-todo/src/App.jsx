@@ -19,6 +19,14 @@ function App() {
   function deleteHandler(id){
     setArr((prevTodo)=> prevTodo.filter((todo)=>todo.id!=id))
   }
+
+  function upperCaseHandler(){
+    setArr((prevTodo)=>(
+      prevTodo.map((todo)=>{
+        return {...todo,value:todo.value.toUpperCase()}
+      })
+    ))
+  }
   return (
     <div>
       <h1>Todo List</h1>
@@ -40,6 +48,7 @@ function App() {
           </li>
         ))}
       </ul>
+      <button onClick={upperCaseHandler}>UpperCase All</button>
     </div>
   );
 }
