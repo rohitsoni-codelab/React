@@ -16,6 +16,9 @@ function App() {
     setVal(event.target.value);
   }
 
+  function deleteHandler(id){
+    setArr((prevTodo)=> prevTodo.filter((todo)=>todo.id!=id))
+  }
   return (
     <div>
       <h1>Todo List</h1>
@@ -30,7 +33,11 @@ function App() {
 
       <ul>
         {arr.map((todos) => (
-          <li key={todos.id}>{todos.value}</li>//modified
+          <li key={todos.id}>
+            <span>{todos.value}</span> &nbsp;&nbsp;
+            <button onClick={()=>(deleteHandler(todos.id))}>delete</button>
+            
+          </li>
         ))}
       </ul>
     </div>
