@@ -20,10 +20,10 @@ function App() {
     setArr((prevTodo) => prevTodo.filter((todo) => todo.id != id))
   }
 
-  function upperCaseHandler() {
+  function lowerCaseHandler() {
     setArr((prevTodo) => (
       prevTodo.map((todo) => {
-        return { ...todo, value: todo.value.toUpperCase() }
+        return { ...todo, value: todo.value.toLowerCase() }
       })
     ))
   }
@@ -61,7 +61,7 @@ function App() {
           </li>
         ))}
       </ul>
-      <button onClick={upperCaseHandler}>UpperCase All</button>
+      <button onClick={lowerCaseHandler}>LowerCase All</button>
     </div>
   );
 }
