@@ -46,7 +46,7 @@ function App() {
         onChange={addInputHandler}
       />
       <br /> <br />
-      <button onClick={addTaskHandler}>Add Task</button>
+      <button onClick={addTaskHandler}>Add Tasks</button>
 
       <ul>
         {arr.map((todos) => (
