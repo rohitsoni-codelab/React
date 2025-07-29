@@ -41,7 +41,7 @@ function App() {
       <h1>Todo List</h1>
       <input
         type="text"
-        placeholder="mention your task"
+        placeholder="Mention your task"
         value={val}
         onChange={addInputHandler}
       />
